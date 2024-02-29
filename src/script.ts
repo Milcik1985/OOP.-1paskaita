@@ -3,12 +3,30 @@
 import { User } from "./User.js";
 
 // 3. name, age, nickName, password turi būt paduodami kuriant naują instance. (per konstruktorių); zr.User.ts
+const newUser = new User ({
+    userName:"Jonas", 
+    age: 35, 
+    nickName: "Joncia", 
+    password: "Labas123", 
+    dateCreated: new Date(), 
+    id: "",
+});
 
-const newUser = new User ("Jonas", 35, "Joncia", "Labas123");
+const newUser2 = new User({
+    userName:"Tomas", 
+    age: 45, 
+    nickName: "Tomcia", 
+    password: "Labas123", 
+    dateCreated: new Date(), 
+    id: "",
+})
+
 console.log(newUser);
-// 4. dataCreated bei id turi būt sugeneruojami automatiškai. (reiks parašyt metodus kurie sugeneruoja reikšmes);
-// 5. name ir age turi turėt getterį bei setterį, nickName tik getterį;
-// 6. Visi kintamieji turi būt private;
+console.log(newUser2);
+
+// 4. dataCreated bei id turi būt sugeneruojami automatiškai. (reiks parašyt metodus kurie sugeneruoja reikšmes); zr.User.ts
+// 5. name ir age turi turėt getterį bei setterį, nickName tik getterį; zr.User.ts
+// 6. Visi kintamieji turi būt private; zr.User.ts
 // 7. Visi metodai naudojami tik klasės viduje turi būt private;
 // 8. Sukurti metodą, kuris atvaizduoja userio info išskyrus password;
 // 9. Sukurti UserCreationType bei priskirti konstruktoriui;
