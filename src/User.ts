@@ -61,19 +61,19 @@ getNickName() {
 
 
 // 7. Visi metodai naudojami tik klasės viduje turi būt private;
-getName(userName: UserType["userName"]) {
+getName() {
     return this.userName;
 };
 
-setName(name: UserType["userName"]) {
+setName() {
     this.userName = name;
 }
 
-getAge(age: UserType["age"]) {
+getAge() {
     return this.age;
 };
 
-getNickName(nickName: UserType["nickName"]) {
+getNickName() {
     return this.nickName;
 };
 
