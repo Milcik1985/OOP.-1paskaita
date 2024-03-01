@@ -65,8 +65,8 @@ getName() {
     return this.userName;
 };
 
-setName() {
-    this.userName = name;
+setName(name: string) {
+    this.userName = this.userName;
 }
 
 getAge() {
@@ -98,8 +98,5 @@ getUserInfo() {
     }
     return userInfo;
 };
-
-
-
 
 };
